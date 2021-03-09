@@ -10,7 +10,17 @@ print(driver.title)
 
 search = driver.find_element_by_id('details-button')
 search.send_keys(Keys.RETURN)
+
 search = driver.find_element_by_id('proceed-link')
+search.send_keys(Keys.RETURN)
+
+search = driver.find_element_by_id('usernameText')
+search.send_keys("rmiller_adm")
+
+search = driver.find_element_by_id('passwordText')
+search.send_keys("Trust30bonD")
+
+search = driver.find_element_by_id('submitBtn')
 search.send_keys(Keys.RETURN)
 
 time.sleep(10)
